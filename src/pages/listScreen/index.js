@@ -2,7 +2,7 @@ import React, { useLayoutEffect } from "react";
 import { Container, AddButton, AddButtonImage, NotesList, NoNotes, NoNotesImage, NoNotesText } from "./styles";
 import { useNavigation } from "@react-navigation/native";
 import { useSelector } from "react-redux";
-import NoteItem from "../../components/NoteItem";
+import NoteItem from '../../components/NoteItem'
 
 export default () => {
 
@@ -25,9 +25,10 @@ export default () => {
             key: index
         })
     }
+
     return (
         <Container>
-            {list.lenght > 0 &&
+            {  list.length > 0 &&
                 <NotesList
                     data={list}
                     renderItem={({ item, index }) => (
